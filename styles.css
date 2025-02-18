@@ -1,0 +1,174 @@
+body{
+    background-color: #191414;
+    font-family: 'system-ui';
+    color:whitesmoke;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: #ccc;
+    margin:10px;
+    text-decoration:none ;
+    transition: color 0.3s;
+}
+
+ul li{
+    display: inline;
+    list-style: none;
+}
+
+a:hover{
+    color:whitesmoke;
+}
+
+.active{
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border:3px solid #ccc; */
+    box-sizing: border-box;
+}
+
+
+.container-img{
+    /* border: 3px solid white; */
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.container-intro{
+    /* border: 3px solid white; */
+    width: 55%;
+    margin: 10px;
+
+}
+
+.container-skills{
+    border: 3px solid white;
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+    height: 100%;
+
+}
+
+img{
+    width: 80%;
+    border: 3px solid whitesmoke;
+}
+
+.container-cube{
+    display: flex;
+    border-top: 1px solid white;
+}
+
+
+
+ /* Efek animasi pada huruf */
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .text {
+    margin-top: 85px;
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    position: relative;
+    animation: typing 4s steps(30) 3s infinite alternate;
+  }
+  
+  .text::after {
+    content: '|';
+    position: absolute;
+    top: 0;
+    font-size: 24px;  /* Sesuaikan ukuran titik dengan teks */
+    color: white;
+    animation: blink 0.75s step-end infinite;
+  }
+  
+.scene {
+    width: 100px;
+    height: 200px;
+    perspective: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(30deg);
+    transition: transform 1s;
+  }
+  
+  .cube:hover {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+  
+  .face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(149, 146, 146, 0.8);
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .front  { transform: translateZ(50px); }
+  .back   { transform: rotateY(180deg) translateZ(50px); }
+  .left   { transform: rotateY(-90deg) translateZ(50px); }
+  .right  { transform: rotateY(90deg) translateZ(50px); }
+  .top    { transform: rotateX(90deg) translateZ(50px); }
+  .bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+  @media(max-width: 768px){
+
+    .container-img{
+        display: none;
+    }
+    .container-intro{
+        width: 80%;
+    }
+
+  }
+
