@@ -358,6 +358,14 @@ img{
       width: 80px;
       height: 80px;
     }
+    .num{
+      width: 40px;
+      height: 40px;
+    }
+    span{
+      margin-left: -15px;
+      margin-top: 8px;
+    }
 
   }
 
