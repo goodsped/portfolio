@@ -308,6 +308,9 @@ img{
   .cube {
     width: 100px;
     height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
     position: relative;
     transform-style: preserve-3d;
     transform: rotateX(30deg) rotateY(30deg);
@@ -345,6 +348,9 @@ img{
     }
     .container-intro{
         width: 85%;
+    }
+    .container-skills{
+      margin: 17.8px;
     }
     .brand{
       width: 30px; height: 30px;
