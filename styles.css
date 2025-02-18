@@ -85,6 +85,64 @@ a:hover{
 
 }
 
+.child{
+  display: flex;
+  justify-content: center;
+}
+
+.num{
+  position: absolute;
+  border-radius: 100%;
+  top: 10;
+  z-index: 1;
+  width: 60px;
+	height: 60px;
+  text-align: center;
+  margin-top: -60px;
+  margin-right: -75px;
+}
+
+.HTML{
+  color: #dc3545;
+  border: 5px solid  #dc3545;
+  background-color: rgba(220, 53, 69, 0.5);
+}
+
+.CSS{
+  color: #507cf6;
+  border: 5px solid #507cf6;
+  background-color: rgba(69, 108, 186, 0.5);
+}
+.React{
+  color: #17a2b8;
+  border: 5px solid #17a2b8;
+  background-color: rgb(23, 162, 184, 0.5);
+}
+
+.Script{
+  color: #f7df1e;
+  border: 5px solid #f7df1e;
+  background-color: rgba(247, 223, 30, 0.5);
+}
+
+.Node{
+  color:#8cc84b;
+  border: 5px solid #8cc84b;
+  background-color: rgba(140, 200, 75, 0.5);
+}
+
+.PHP{
+  color:#8993be;
+  border: 5px solid #8993be;
+  background-color: rgba(137, 147, 190, 0.5);
+}
+
+span{
+  position: absolute;
+    margin-left: -13px;
+    margin-top: 15px;
+}
+
 img{
     width: 80%;
     border: 3px solid whitesmoke;
