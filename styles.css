@@ -102,6 +102,88 @@ a:hover{
   margin-right: -75px;
 }
 
+.num .HTML span.glow {
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.8), 0 0 20px rgba(52, 152, 219, 0.6);
+  transform: scale(1.2);
+}
+
+.HTML .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%; /* Sesuaikan dengan ukuran .num */
+  height: 100%; /* Sesuaikan dengan ukuran .num */
+  border-radius: 50%; /* Membuatnya berbentuk lingkaran */
+  border: 4px solid #dc3545;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: circleEffect 2s ease-out forwards;
+}
+
+.CSS .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%; /* Sesuaikan dengan ukuran .num */
+  height: 100%; /* Sesuaikan dengan ukuran .num */
+  border-radius: 50%; /* Membuatnya berbentuk lingkaran */
+  border: 4px solid #507cf6;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: circleEffect 2s ease-out forwards;
+}
+
+.Script .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%; 
+  height: 100%; 
+  border-radius: 50%;
+  border: 4px solid  #f7df1e;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: circleEffect 2s ease-out forwards;
+}
+.Node .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%; 
+  height: 100%;
+  border-radius: 50%; 
+  border: 4px solid #8cc84b;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: circleEffect 2s ease-out forwards;
+}
+.React .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%; 
+  height: 100%; 
+  border-radius: 50%;
+  border: 4px solid  #17a2b8;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: circleEffect 2s ease-out forwards;
+}
+.PHP .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%; 
+  height: 100%; 
+  border-radius: 50%;
+  border: 4px solid #8993be;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: circleEffect 2s ease-out forwards;
+}
+
+
+
 .HTML{
   color: #dc3545;
   border: 5px solid  #dc3545;
@@ -139,25 +221,40 @@ a:hover{
 
 span{
   position: absolute;
-    margin-left: -13px;
-    margin-top: 15px;
+  margin-left: -13px;
+  margin-top: 15px;
 }
 
 img{
-    width: 80%;
-    border: 3px solid whitesmoke;
+  width: 80%;
+  /* border: 3px solid whitesmoke; */
 }
 
 .container-cube{
-    display: flex;
-    border-top: 1px solid white;
+  display: flex;
+  border-top: 1px solid white;
 }
 
 
+/* Animasi efek lingkaran */
+@keyframes circleEffect {
+  0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.5);
+  }
+}
 
- /* Efek animasi pada huruf */
+/* Efek animasi pada huruf */
 @keyframes typing {
-    from {
+  from {
       width: 0;
     }
     to {
@@ -249,6 +346,15 @@ img{
     .container-intro{
         width: 85%;
     }
+    .brand{
+      width: 30px; height: 30px;
+    }
 
+  }
+
+  @media only screen and (min-width: 768px){
+    .brand{
+      display: none;
+    }
   }
 
