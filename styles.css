@@ -2,6 +2,20 @@ body{
     background-color: #191414;
     font-family: 'system-ui';
     color:whitesmoke;
+    box-sizing: border-box;
+}
+
+header {
+  background-color: #191414;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.box-shadow{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav{
@@ -17,7 +31,7 @@ a{
 }
 
 ul li{
-    display: inline;
+    display: inline-block;
     list-style: none;
 }
 
@@ -33,6 +47,7 @@ a:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 10px;
     width: 100%;
     /* border:3px solid #ccc; */
     box-sizing: border-box;
@@ -44,6 +59,7 @@ a:hover{
     width: 25%;
     text-align: center;
     margin: 10px;
+    height: 100%;
     
 }
 
@@ -87,7 +103,7 @@ img{
       width: 0;
     }
     to {
-      width: 100%;
+      width: 25%;
     }
   }
   
