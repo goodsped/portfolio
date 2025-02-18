@@ -67,7 +67,6 @@ a:hover{
     /* border: 3px solid white; */
     width: 55%;
     margin: 10px;
-
 }
 
 .about{
@@ -82,7 +81,6 @@ a:hover{
     text-align: center;
     margin: 10px;
     height: 100%;
-
 }
 
 .child{
@@ -145,6 +143,7 @@ a:hover{
   transform: translate(-50%, -50%);
   animation: circleEffect 2s ease-out forwards;
 }
+
 .Node .circle {
   position: absolute;
   top: 50%;
@@ -349,14 +348,15 @@ img{
     .container-intro{
         width: 85%;
     }
-    .container-skills{
-      margin: 17.8px;
-    }
     .brand{
       width: 30px; height: 30px;
     }
     a{
       margin:5px;
+    }
+    .img-icon{
+      width: 80px;
+      height: 80px;
     }
 
   }
