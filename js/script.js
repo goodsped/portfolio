@@ -38,5 +38,18 @@ window.addEventListener("scroll", function () {
     }
   });
 
+const brand = document.querySelector('.brand');  
+const img = document.querySelector('.container-img');
+
+// if (getComputedStyle(img).display === 'none') {
+//   brand.style.display = 'block';
+// }
+
+// if (getComputedStyle(img).display === 'block') {
+//   brand.style.display = 'none';
+// }
+
+
+
 
   
